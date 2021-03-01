@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame3</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="main">
+            <div class="main__child">
+                <div class="left">
+                    <div class="title">
+                        <div class="title__lines">
+                            <div class="title__line1"></div>
+                            <div class="title__line2"></div>
+                            <div class="title__line3"></div>
+                        </div>
+                        <div class="title__text">
+                            КАСТОМИЗАЦИЯ ТРАНСПОРТА
+                        </div>
+                    </div>
+                </div>
+
+            
+        
+                <div class="content">
+                    <div class="header__top">
+                        <button>ГОНКА</button>
+                    </div>
+                    <div class="header__descr">
+                        КРУГОВОЕ ДВИЖЕНИЕ
+                    </div>
+
+                    <!-- <div class="header">
+                          
+                        
+                    </div> -->
+                    
+                    <!-- <div class="list" style="margin-top: 75px; height: 632px; overflow-y: scroll; padding-right: 20px;">
+                        <div class="list__item" v-for="item in listItems">
+                            <div class="list__left">
+                             
+                                <div class="list__text">
+                                    {{ item.name }}
+                                </div>
+                            </div>
+                            <div class="list__right">
+                                <div class="list__badge" :style="{ display: item.statusMode }" style="margin-right: 15px;">
+                                    {{ item.status }}
+                                </div>
+                                <div class="list__switch" :style="{ display: item.statusSwitch }">
+                                    <div class="list__switch_button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div class="list" style="margin-top: 75px; padding-right: 0px;">
+                        <div class="list__item" >
+                            <div class="list__left">
+                               
+                                <div class="list__text">
+                                    &lt; &nbsp; &nbsp;  ELEGY TURBO  &nbsp; &nbsp; &gt;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list__item" >
+                            <div class="list__left">
+                               
+                                <div class="list__text">
+                                    &lt; &nbsp; &nbsp;  РАСКРАСКА  &nbsp; &nbsp; &gt;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list__item" style="margin-bottom: 0px;">
+                            <div class="list__left">
+                               
+                                <div class="list__text">
+                                    ЦВЕТ ТРАНСПОРТА
+                                </div>
+                            </div>
+                            <div class="list__right_red">
+                                <div  style="margin-right: 15px;" >
+                                    [#FF0000]
+                                </div>    
+                            </div>
+                        </div>
+
+
+
+                        <div class="list__item_palitra">
+                            <span>ВЫБЕРИТЕ ЦВЕТ ТРАНСПОРТА</span>
+                        </div>
+                           
+                        
+                        
+
+                        <div class="list__item" >
+                            <div class="list__left">
+                                <div class="list__text">
+                                    КОСТЮМ ПЕРСОНАЖА
+                                </div>  
+                            </div>
+                            <div class="list__right">
+                                <div  style="margin-right: 15px;">
+                                    &lt; &nbsp; &nbsp;  CRAZE LARRY  &nbsp; &nbsp; &gt;
+                                </div>    
+                            </div>    
+                        </div>
+
+                        <div class="list__item" >
+                            <div class="list__left">
+                                <div class="list__text">
+                                    ШЛЕМ
+                                </div>  
+                            </div>
+                            <div class="list__right">
+                                <div  style="margin-right: 15px;">
+                                    &lt; &nbsp; &nbsp;  BLACK ELVIS  &nbsp; &nbsp; &gt;
+                                </div>    
+                            </div>    
+                        </div>
+
+                        <div class="list__item" >
+                            <div class="list__left">
+                                <div class="list__text">
+                                    ПОБЕДНЫЙ ТАНЕЦ
+                                </div>  
+                            </div>
+                            <div class="list__right">
+                                <div  style="margin-right: 15px;">
+                                    &lt; &nbsp; &nbsp;  ASS TVERK  &nbsp; &nbsp; &gt;
+                                </div>    
+                            </div>    
+                        </div>
+
+                        <div class="list__item" >
+                            <div class="list__left">
+                                <div class="list__text">
+                                    ПАК ЖЕСТОВ
+                                </div>  
+                            </div>
+                            <div class="list__right">
+                                <div  style="margin-right: 15px;">
+                                    &lt; &nbsp; &nbsp;  BLACK ELVIS  &nbsp; &nbsp; &gt;
+                                </div>    
+                            </div>    
+                        </div>
+
+                        <div class="list__item" >
+                            <div class="list__left">
+                                <div class="list__text">
+                                    БОНУСНЫЙ ПРЕДМЕТ
+                                </div>  
+                            </div>
+                            <div class="list__right">
+                                <div  style="margin-right: 15px;">
+                                    &lt; &nbsp; &nbsp;  НЕДОСТУПНО  &nbsp; &nbsp; &gt;
+                                </div>    
+                            </div>    
+                        </div>
+
+
+                    </div>
+                    <div class="bottom">
+                        <div class="buttons">
+                            <div class="default-button" style="margin-right: 10px;">принять изменения</div>
+                            <div class="default-button">покинуть игру</div>
+                        </div>
+                        <div class="online">
+                            <img src="./online.svg" alt="" srcset="">
+                            <div class="online__text">14/26</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="left-arrow">
+            <img src="./left_arrow.svg" alt="">
+        </div> -->
+        <div class="shadow"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- <script>
+var app = new Vue({
+    el: '.main',
+    data: {
+        listItems: [
+            { id: 145, name: 'РЕКОМЕНДУЕМЫЕ НАСТРОЙКИ', status: 'хост', statusMode: 'none'},
+            { id: 78, name: 'ВРЕМЯ', status: '▼ 11 : 30', statusSwitch: 'none'},
+            { id: 128, name: 'ПОГОДА', status: '▼ Солнечно', statusSwitch: 'none'},
+            { id: 98, name: 'НОЧНОЕ ВРЕМЯ', statusMode: 'none'},
+            { id: 153, name: 'СОЛНЕЧНО', statusMode: 'none'},
+            { id: 12, name: 'GTA РЕЖИМ', statusMode: 'none'},
+            { id: 213, name: 'БЕСКОНТАКТНАЯ ГОНКА', statusMode: 'none'},
+            { id: 78, name: 'ТРАФФИК', statusMode: 'none'},
+            { id: 78, name: 'УРОВНИ РОЗЫСКА', statusMode: 'none'},
+            { id: 78, name: 'ВОЗДУШНЫЙ КАРМАН', statusMode: 'none'},
+            { id: 78, name: 'БОТЫ В ГОРОДЕ', statusMode: 'none'},
+            { id: 78, name: 'ПРИГЛАШЕНИЕ ПОЛЬЗОВАТЕЛЕЙ', statusMode: 'none'},
+            { id: 78, name: 'ПРИГЛАШЕНИЕ ПОЛЬЗОВАТЕЛЕЙ', statusMode: 'none'},
+            { id: 78, name: 'ПРИГЛАШЕНИЕ ПОЛЬЗОВАТЕЛЕЙ', statusMode: 'none'},
+            { id: 78, name: 'ПРИГЛАШЕНИЕ ПОЛЬЗОВАТЕЛЕЙ', statusMode: 'none'},
+            { id: 78, name: 'ПРИГЛАШЕНИЕ ПОЛЬЗОВАТЕЛЕЙ', statusMode: 'none'},
+            { id: 78, name: 'ПРИГЛАШЕНИЕ ПОЛЬЗОВАТЕЛЕЙ', statusMode: 'none'},
+        ]
+    },
+    mounted() {
+
+    }
+})
+</script> -->
+
